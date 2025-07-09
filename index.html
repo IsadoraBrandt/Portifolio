@@ -1,107 +1,253 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Escolar</title>
+  <style>
+    :root {
+      --tangerine: #F08C21;
+      --butter: #F2D88F;
+      --blush: #E36888;
+      --sea: #6698CC;
+      --matcha: #B4B534;
+      --background: #FDFDFD;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: var(--background);
+      color: #222;
+    }
+
+    header {
+      padding: 3rem 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      background-color: var(--sea);
+    }
+
+    nav a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3rem 2rem;
+      background-color: var(--butter);
+    }
+
+    .hero-text {
+      flex: 1 1 300px;
+    }
+
+    .hero-text h2 {
+      font-size: 2.5rem;
+      color: var(--tangerine);
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      max-width: 500px;
+    }
+
+    .hero-img {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .hero-img img {
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--blush);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: var(--matcha);
+      border-radius: 10px;
+      padding: 1.5rem;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background-color: var(--sea);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1 style="color: greenyellow;"> título 1 - o mais importante</h1>
-    <h2 style="background-color: rgb(133, 242, 131);"> título 2 - o segundo mais importante</h2>
-    <h3 style="border: 0.5px solid rgb(4, 30, 21);"> título 3 - o terceiro mais importante</h3>
-    <h4 style="border:  2px solid rgb(4, 30, 21); border-radius: 10px;"> título 4 - o quarto mais importante</h4>
-    <h5 style="font-family: cursive; font-size: 30px;"> título 5 - o sexto mais importante</h5>
-    <h6> título 6 - o sexto mais importante</h6>
 
-    <img src="/zeusS2.jpg" alt="Imagem de um cachorro" 
-    style=" width: 400px; height: 400px; border-radius: 20px;">
+  <header>
+    <h1>Meu Portfólio Escolar</h1>
+  </header>
 
- </head>
-<body>
-        <a href ="https://www.google.com" target="_blank">
-            <img src="/papagaio.jfif" alt=" Google Logo"  width="150px" heigh="50">
-            </a> <br>
-            <a href="#c1">Capítulo 1</a> <br>
-            <a href="#c2">Capítulo 2</a> <br>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#tanaMedida">Tá na Medida</a>
+    <a href="#contato">Contato</a>
+  </nav>
 
+  <section class="hero" id="sobre">
+    <div class="hero-text">
+      <h2>Sobre mim</h2>
+      <p> Meu nome é Isadora da Luz Brandt, tenho 18 anos e curso o 3º ano do Ensino Médio no CEDUP Perfeito 
+        Manoel de Aguiar, em Guaramirim, Santa Catarina. Sou estudante do curso técnico em Ciência de Dados,
+         e neste espaço compartilho meus principais projetos e trabalhos escolares desenvolvidos ao longo do
+        ano letivo.
+      </p>
+    </div>
+    <div class="hero-img">
+      <img src="https://via.placeholder.com/300x200.png?text=Imagem+Projeto" alt="Projeto destaque">
+    </div>
+  </section>
 
-                <ul>
-                  <li> Item 2</a></li>      
-                 <li> Item 2 </a></li>
-                 <li> Item 3 </a></li>
-                   
-                </ul>
-
-                <ol>
-                 <li> Item 2</a></li>      
-                 <li> Item 2 </a></li>
-                 <li> Item 3 </a></li>
-
-                </ol>
-
-    <h2>Tabelas</h2>
-
-                <table border="1">
-                        <tr>
-                            <th>Nome</th>
-                            <th>Idade</th>
-                            <th>Cidade</th>
-                        </tr>
-                        <tr>
-                            <td>João</td>
-                            <td>30 </td>
-                            <td>São Paulo</td>
-                        </tr>
-                        <tr>
-                            <td>Maria</td>
-                            <td>30 </td>
-                            <td>Rio de Janeiro</td>
-                        </tr>
-
-
-
-
-                </table>
-
-
-
-
-
-
-
-
-            
-    <h2 id="c1">Capitulo 1 </h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nunc volutpat, convallis magna venenatis, eleifend enim. Maecenas auctor turpis eget fringilla lacinia. Etiam fermentum lacus id dui posuere placerat. Proin non velit nec lacus tristique dignissim et eu elit. Nulla at viverra leo, eget finibus risus. Vivamus vulputate efficitur ante, sed convallis orci posuere nec. Suspendisse feugiat diam turpis, sed posuere erat condimentum sit amet. Aliquam varius molestie suscipit. Nullam id rhoncus massa, vel hendrerit magna. Aliquam hendrerit eget nulla eget elementum. Vestibulum non diam pulvinar urna cursus condimentum sed at nisl.
-Morbi molestie malesuada eros, vel pretium nunc congue a. Pellentesque a tincidunt nunc. Aliquam erat volutpat. Pellentesque a ligula id mauris dapibus vulputate. Maecenas hendrerit ligula convallis, iaculis erat a, efficitur felis. Maecenas tincidunt neque est. Pellentesque non turpis non felis varius rhoncus. Proin in lacus vitae enim condimentum vestibulum ac ac enim. In tristique dignissim diam. Donec sit amet dolor mi. Nunc tempor at lectus fringilla pulvinar. Donec a lectus sed urna porttitor varius. Etiam dignissim felis ut ipsum mattis, ac cursus quam egestas. Nulla eleifend interdum commodo. Fusce malesuada velit nec lacus pretium, in consequat urna fermentum. Donec rutrum, felis vitae egestas ullamcorper, justo libero fermentum leo, sed dignissim justo leo eget libero.
-Ut dapibus arcu sed lacinia finibus. Nulla rutrum ut sem sed hendrerit. Donec et hendrerit orci. Etiam tincidunt elementum urna, a consectetur erat scelerisque tempus. Cras viverra auctor malesuada. Maecenas scelerisque lobortis mauris venenatis malesuada. Vivamus luctus viverra ligula, sed eleifend nisi tincidunt vitae. Fusce mauris nibh, euismod tempus efficitur nec, vestibulum non odio. Sed efficitur nulla neque, vitae consectetur purus pellentesque vitae. Vivamus ullamcorper tortor sit amet massa volutpat, quis maximus ligula condimentum. In libero erat, tincidunt a lorem ac, feugiat sagittis libero. Nam hendrerit, enim quis tempus facilisis, lectus nibh pulvinar odio, non mattis tortor diam at mi. Vestibulum varius eu nibh et dictum. Sed vel quam purus.
-Suspendisse odio arcu, faucibus et malesuada ac, cursus quis mauris. Suspendisse pharetra viverra elementum. Vestibulum non neque diam. Phasellus auctor convallis felis et elementum. In hac habitasse platea dictumst. Fusce ac mauris et massa porta varius. Duis viverra sodales libero pellentesque congue. Nam sit amet velit hendrerit, placerat diam nec, efficitur lorem. Nam ullamcorper a nisi a pulvinar. Integer vitae ex tellus. Nunc quis ornare diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur porta enim at tincidunt scelerisque. Aliquam sed quam odio. Donec vitae urna enim.
-Phasellus posuere turpis a quam scelerisque, at tincidunt erat tempus. Aliquam erat volutpat. Praesent nisi leo, lacinia sed tellus non, ultrices dictum dolor. Nullam et risus consectetur, maximus tortor hendrerit, commodo sem. Aliquam quis volutpat quam, id mollis magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse rhoncus tellus at risus volutpat dictum. Proin ut nisi semper lacus suscipit euismod pharetra vel magna. Cras nec felis eu lacus fermentum finibus.
-    </p>
-
-    <p> Este é um parágrafo de exemplo para o portifólio
-        <br> 
-        <br> 
-        <B>HABILIDADES</B> <I>EXPERIÊNCIAS </I> SUAS HABILIDADES , EXPERIÊNCIAS E PROJETOS.
+  <section class="section" id="projetos">
+    <h2>Projetos em Destaque</h2>
+    <div class="grid">
+      <div class="card">
+        <h3> Dashboard realizado na matéria </h3>
+        <p> <img src="DASH.jpg" alt="Dashboard" style="width: 100%; border-radius: 10px;">
         </p>
-        <strong> texto importante </strong>
-        <br>
-        <em> texto enfatizado </em>
-        <br>
-        <mark> texto amarelinho </mark>
-        <br>
-        <small>texto pequeno</small>
-        <br> 
-        <del> texto riscado </del>
-        <br>
-        <ins> texto inserido </ins>
-        <br> 
-        teste<sub> texto subescrito</sub>
-        <br>
-        teste<sup> textosobreescrito</sup>
+      </div>
+      <div class="card" style="background-color: var(--blush);">
+        <h3>Sites Desenvolvidos</h3>
+        <p> Fizemos alguns sites ao longo do período letivo, os mais relevantes são sobre o Manifesto Ágil
+            para Desenvolvimento de Software e o seguinte sobre DeepFakes
 
-        <h2> diferença entre negrito (b) e strong</h2>
-        o elemento <b> é usado para destacar texto indicar importância , enquanto o  </b>
+            <p><strong>🌐 Confira meu Site sobre o Manifesto Ágil aqui!:</strong><br>
+                <a href="https://sites.google.com/estudante.sed.sc.gov.br/agilmanifesto/in%C3%ADcio" target="_blank" style="color: white; text-decoration: underline;">Acessar site</a></p>
+       
+                <p><strong>🌐 Confira meu Site sobre DeepFakes aqui!:</strong><br>
+                    <a href="https://sites.google.com/estudante.sed.sc.gov.br/deepfake-vivo/in%C3%ADcio" target="_blank" style="color: white; text-decoration: underline;">Acessar site</a></p>
+            </p>
+      </div>
+      <div class="card" style="background-color: var(--tangerine);">
+        <h3>Projeto de Matemática</h3>
+        <p>Modelagem de formas geométricas em 3D e suas aplicações no dia a dia.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tanaMedida">
+    <h2>Tá na Medida</h2>
+    <div class="grid">
+      
+      <div class="card" style="background-color: var(--butter); color: #222;">
+        <h3>Sobre o Projeto</h3>
+        <p>O Tá na Medida é um projeto de investigação sobre os hábitos alimentares dos alunos 
+          durante o recreio em escolas públicas. Foi desenvolvido por meio da coleta e análise
+          de dados reais, com foco em compreender padrões de consumo e sugerir melhorias. O trabalho surgiu
+          em Maio de 2024 devido ao evento Innovation Camp da Junior Achievement. 
+          O trabalho envolveu pesquisa, aplicação de questionários, organização das informações e 
+          produção de gráficos e relatórios, criação de um site e aplicativo, tudo isso unindo prática e 
+          aprendizado em ciência de dados.</p>
+      </div>
+  
+      <div class="card" style="background-color: var(--sea);">
+        <h3>Objetivo</h3>
+        <p>O projeto tem como objetivo analisar os hábitos alimentares dos alunos durante o recreio
+          em escolas públicas, a partir da coleta e interpretação de dados reais, e promover a sustentabilidade
+          no meio escolar. A proposta busca compreender os padrões de consumo, levantar possíveis impactos desses
+          hábitos na saúde e 
+          estimular reflexões sobre a importância de uma alimentação equilibrada no ambiente escolar.</p>
+      </div>
+  
+      <div class="card" style="background-color: var(--matcha);">
+        <h3>Etapas Realizadas</h3>
+        <p>Até o momento, desenvolvemos o site e o aplicativo do projeto, cultivamos a horta na escola
+          com a participação dos alunos e professores, e estamos marcando presença em feiras e
+          eventos para apresentar nossas ações e ampliar o alcance do Tá na Medida.</p>
+      </div>
+  
+      <div class="card" style="background-color: var(--blush);">
+        <h3>Nosso App, Site e Fotos</h3>
+        <p><strong>🌐 Site do Projeto:</strong><br>
+          <a href="https://link-do-site.com" target="_blank" style="color: white; text-decoration: underline;">Acessar site</a></p>
+  
+        <p><strong>📱 Aplicativo:</strong><br>
+          <a href="https://link-do-app.com" target="_blank" style="color: white; text-decoration: underline;">Ver aplicativo</a></p>
+  
+        <h3>📄 Projeto em PDF</h3>
+        <p>Você pode acessar o documento completo do projeto escrito clicando no link abaixo:</p>
+        <a href="https://docs.google.com/document/d/19TdlfeYS-LrFZrVwSxwGAXZMGL9CUPBA/edit?usp=sharing&ouid=111062464511900316449&rtpof=true&sd=true" target="_blank" style="color: white; font-weight: bold; text-decoration: underline;">Visualizar PDF</a>
+      </div>
+    </div>
+  
+    <!-- GALERIA DE FOTOS NO FINAL -->
+    <div style="margin-top: 3rem;">
+      <h3 style="color: var(--blush); font-size: 1.5rem;">📸 Fotos do Projeto</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+        <img src="feiraciencias.jpg" alt="Equipe na Feira de Ciências" style="width: 100%; border-radius: 10px;">
+        <img src="unnamed (1).jpg" alt="Equipe cultivando a horta" style="width: 100%; border-radius: 10px;">
+        <img src="feira.jpg" alt="Premiação Feira de Ciências do CEDUP" style="width: 100%; border-radius: 10px;">
+        <img src="DASH.jpg" alt="Dashboard" style="width: 100%; border-radius: 10px;">
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="section" id="contato">
+    <h2>Contato</h2>
+    <p>Quer saber mais ou deixar um comentário? Envie um e-mail para <a href="mailto:meuemail@escola.com">meuemail@escola.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Portfólio Escolar | Desenvolvido com 💛</p>
+  </footer>
 
 </body>
 </html>
