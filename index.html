@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Escolar</title>
+  <style>
+    :root {
+      --tangerine: #F08C21;
+      --butter: #F2D88F;
+      --blush: #E36888;
+      --sea: #6698CC;
+      --matcha: #B4B534;
+      --background: #FDFDFD;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: var(--background);
+      color: #222;
+    }
+
+    header {
+      padding: 3rem 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      background-color: var(--sea);
+    }
+
+    nav a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3rem 2rem;
+      background-color: var(--butter);
+    }
+
+    .hero-text {
+      flex: 1 1 300px;
+    }
+
+    .hero-text h2 {
+      font-size: 2.5rem;
+      color: var(--tangerine);
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      max-width: 500px;
+    }
+
+    .hero-img {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .hero-img img {
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--blush);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: var(--matcha);
+      border-radius: 10px;
+      padding: 1.5rem;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background-color: var(--sea);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Meu Portfólio Escolar</h1>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#tanaMedida">Tá na Medida</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section class="hero" id="sobre">
+    <div class="hero-text">
+      <h2>Sobre mim</h2>
+      <p> Meu nome é Isadora da Luz Brandt, tenho 18 anos e curso o 3º ano do Ensino Médio no CEDUP Perfeito 
+        Manoel de Aguiar, em Guaramirim, Santa Catarina. Sou estudante do curso técnico em Ciência de Dados,
+         e neste espaço compartilho meus principais projetos e trabalhos escolares desenvolvidos ao longo do
+        ano letivo.
+      </p>
+    </div>
+    <div class="hero-img">
+     
+    </div>
+  </section>
+
+ <!-- ... (cabeçalho e estilo mantidos como está) ... -->
+
+<section class="section" id="projetos">
+  <h2>Projetos em Destaque</h2>
+
+  <!-- PRIMEIRA LINHA: PROJETOS -->
+  <div class="grid">
+    <div class="card">
+      <h3>Dashboard realizado na matéria de Ingestão de Dados</h3>
+      <p><img src="dashboard.jpg" alt="Dashboard" style="width: 100%; border-radius: 10px;"></p>
+    </div>
+
+    <div class="card" style="background-color: var(--blush);">
+      <h3>Sites Desenvolvidos</h3>
+      <p>Fizemos alguns sites ao longo do período letivo, os mais relevantes são sobre o Manifesto Ágil
+        para Desenvolvimento de Software e DeepFakes.</p>
+      <p><strong>🌐 Site Manifesto Ágil:</strong><br>
+        <a href="https://sites.google.com/estudante.sed.sc.gov.br/agilmanifesto/in%C3%ADcio" target="_blank" style="color: white; text-decoration: underline;">Acessar site</a></p>
+      <p><strong>🌐 Site sobre DeepFakes:</strong><br>
+        <a href="https://sites.google.com/estudante.sed.sc.gov.br/deepfake-vivo/in%C3%ADcio" target="_blank" style="color: white; text-decoration: underline;">Acessar site</a></p>
+    </div>
+
+    <div class="card" style="background-color: var(--sea);">
+      <h3>Projeto Ingestão de Dados: Visualização de Dados da NASA</h3>
+      <p>Este projeto foi desenvolvido com base na biblioteca oficial da NASA para acessar dados espaciais. A partir dela, criamos códigos em Python que processam e transformam informações científicas em gráficos interativos e fáceis de interpretar. O objetivo principal foi explorar dados reais sobre o espaço e aplicar técnicas de Ciência de Dados para gerar visualizações informativas e educativas.</p>
+      <p><strong>▶️ Abrir no Google Colab:</strong><br>
+        <a href="https://colab.research.google.com/drive/1nyHRevXEtLKlM4sRwUE_onAkLcX-yJef?usp=sharing" target="_blank" style="color: white; text-decoration: underline;">Executar no Colab</a></p>
+      <p><strong>📥 Download do Arquivo:</strong><br>
+        <a href="https://drive.google.com/uc?export=download&id=1nyHRevXEtLKlM4sRwUE_onAkLcX-yJef" target="_blank" style="color: white; text-decoration: underline;">Baixar .py</a></p>
+    </div>
+
+    <!-- SEGUNDA LINHA: CERTIFICADOS -->
+    <div class="card" style="background-color: var(--matcha);">
+      <h3>Certificado Data Science Academy</h3>
+      <img src="certi1.jpg" alt="Certificado 1" style="width: 100%; border-radius: 10px;">
+    </div>
+
+    <div class="card" style="background-color: var(--tangerine);">
+      <h3>Certificado Fundação Bradesco</h3>
+      <img src="certi2.jpg" alt="Certificado 2" style="width: 100%; border-radius: 10px;">
+    </div>
+
+    <div class="card" style="background-color: var(--blush);">
+      <h3>Outro Certificado Fundação Bradesco</h3>
+      <img src="certi3.jpg" alt="Certificado 3" style="width: 100%; border-radius: 10px;">
+    </div>
+  </div>
+</section>
+
+
+      
+      <div class="card" style="background-color: var(--butter); color: #222;">
+        <h3>Sobre o Projeto</h3>
+        <p>O Tá na Medida é um projeto de investigação sobre os hábitos alimentares dos alunos 
+          durante o recreio em escolas públicas. Foi desenvolvido por meio da coleta e análise
+          de dados reais, com foco em compreender padrões de consumo e sugerir melhorias. O trabalho surgiu
+          em Maio de 2024 devido ao evento Innovation Camp da Junior Achievement. 
+          O trabalho envolveu pesquisa, aplicação de questionários, organização das informações e 
+          produção de gráficos e relatórios, criação de um site e aplicativo, tudo isso unindo prática e 
+          aprendizado em ciência de dados.</p>
+      </div>
+  
+      <div class="card" style="background-color: var(--sea);">
+        <h3>Objetivo</h3>
+        <p>O projeto tem como objetivo analisar os hábitos alimentares dos alunos durante o recreio
+          em escolas públicas, a partir da coleta e interpretação de dados reais, e promover a sustentabilidade
+          no meio escolar. A proposta busca compreender os padrões de consumo, levantar possíveis impactos desses
+          hábitos na saúde e 
+          estimular reflexões sobre a importância de uma alimentação equilibrada no ambiente escolar.</p>
+      </div>
+  
+      <div class="card" style="background-color: var(--matcha);">
+        <h3>Etapas Realizadas</h3>
+        <p>Até o momento, desenvolvemos o site e o aplicativo do projeto, cultivamos a horta na escola
+          com a participação dos alunos e professores, e estamos marcando presença em feiras e
+          eventos para apresentar nossas ações e ampliar o alcance do Tá na Medida.</p>
+      </div>
+  
+      <div class="card" style="background-color: var(--blush);">
+        <h3>Nosso App, Site e Fotos</h3>
+        <p><strong>🌐 Site do Projeto:</strong><br>
+          <a href="https://link-do-site.com" target="_blank" style="color: white; text-decoration: underline;">Acessar site</a></p>
+  
+        <p><strong>📱 Aplicativo:</strong><br>
+          <a href="https://link-do-app.com" target="_blank" style="color: white; text-decoration: underline;">Ver aplicativo</a></p>
+  
+        <h3>📄 Projeto em PDF</h3>
+        <p>Você pode acessar o documento completo do projeto escrito clicando no link abaixo:</p>
+        <a href="https://docs.google.com/document/d/19TdlfeYS-LrFZrVwSxwGAXZMGL9CUPBA/edit?usp=sharing&ouid=111062464511900316449&rtpof=true&sd=true" target="_blank" style="color: white; font-weight: bold; text-decoration: underline;">Visualizar PDF</a>
+      </div>
+    </div>
+  
+    <!-- GALERIA DE FOTOS NO FINAL -->
+    <div style="margin-top: 3rem;">
+      <h3 style="color: var(--blush); font-size: 1.5rem;">📸 Fotos do Projeto</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+        <img src="feiraciencias.jpg" alt="Equipe na Feira de Ciências" style="width: 100%; border-radius: 10px;">
+        <img src="unnamed (1).jpg" alt="Equipe cultivando a horta" style="width: 100%; border-radius: 10px;">
+        <img src="feira.jpg" alt="Premiação Feira de Ciências do CEDUP" style="width: 100%; border-radius: 10px;">
+        <img src="DASH.jpg" alt="Dashboard" style="width: 100%; border-radius: 10px;">
+        <img src="tanam.jpg" alt="Dashboard" style="width: 100%; border-radius: 10px;">
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="section" id="contato">
+    <h2>Contato</h2>
+    <p>Quer saber mais ou deixar um comentário? Envie um e-mail para <a href="mailto: isadoradaluzbrandt@gmail.com">isadoradaluzbrandt@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Portfólio Escolar Isadora da Luz Brandt | Desenvolvido com 💛</p>
+  </footer>
+
+</body>
+</html>
